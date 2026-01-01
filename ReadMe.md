@@ -64,18 +64,25 @@ QuMail/
 
 ### Start QKD-KMS
 ```bash
+## ▶️ Run QuMail (Local)
+
+### 1️⃣ Run QKD-KMS (BB84 Simulation)
+
 cd Qumail/qkd_kms
 uvicorn api:app --reload --port 8001
-
-
-
 cd Qumail/backend
 uvicorn api:app --reload --port 8002
-
-
-
 cd Qumail/frontend
 npm start
+
+Access URLs
+
+QKD-KMS → http://127.0.0.1:8001/docs
+
+Backend → http://127.0.0.1:8002/docs
+
+Frontend → http://localhost:3000
+---
 
 
 🔐 API Endpoints
